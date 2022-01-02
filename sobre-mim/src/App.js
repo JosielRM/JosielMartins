@@ -1,11 +1,13 @@
 import React from "react";
-import Foto from '../../sobre-mim/src/assests/grem.jpg'
+import { ThemeProvider } from "styled-components";
+import theme from "./constants/theme";
+import Routs from './routs/Routs'
 
 function App() {
   return (
-    <div>
-    <img src={Foto}/> 
-    </div>
+    <ThemeProvider theme={theme}>
+      <Routs/>
+    </ThemeProvider>
   );
 }
 
